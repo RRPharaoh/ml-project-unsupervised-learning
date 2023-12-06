@@ -8,7 +8,7 @@ The ultimate goal of the project is to gain insights from the data utilizing PCA
 ### 1st Step: data analysis
 The first step of this project was to access and explore a dataset comprised of volume data with key metrics represented by product types. I started by analyzing the data utilizing the EDA process. I began by looking at key metrics within the descriptive statistics and checking the data frame for completion.
 **Key takeaways**
--based on the pairplot data, we can see some positive correlation between:
+- based on the pairplot data, we can see some positive correlation between:
 - Grocery and detergent paper
 - milk and detergent paper
 - There also appears to be some sporadic outliers and significant pockets of data.
@@ -19,7 +19,7 @@ My initial thought is that Grocery is a cumulative measurement, as it is signifi
 under normal circumstances, I would attempt to prove this by quantifying the values, but I will refrain to stay within the scope of this project.
 
 ### Step 2 : Data Preprocessing
-The step involved addressing outliers, normalizing the data.
+This step involved addressing outliers and normalizing the data.
 
 ### Step 3 Training model implementation
 I utilized Kmeans to segment customers into distinct groups based on purchasing patterns. After utilizing the Elbow Method to determine the optimal number of clusters, I applied KMeans clustering and assigned cluster labels to each data point. The Clusters indicated 4 distinct customer purchasing patterns which could represent different customers based on volume. 
@@ -27,7 +27,7 @@ I utilized Kmeans to segment customers into distinct groups based on purchasing 
 Hierarchical clustering was used to create segmentation of customers, highlighting the hierarchical purchasing pattern in customer.
 PCA was used to transform data into a lower-dimensional space while preserving the essential variance in the data. 
 
-### Results
+### Conclusion
 - Kmeans seems to be the most effective at clustering
 - Variables above 10k became significantly less clustered, and to fine tune the model, could be considered outliers. 
 - based on the pair plot data, we can see some positive correlation between: Grocery and detergent paper, milk and detergent paper
