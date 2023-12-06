@@ -1,7 +1,7 @@
 # machine_learning_project-unsupervised-learning
 ## Project/Goals
-The objective of the project is to utilize unsupervised learning techniques to to gain insight on customer purchasing patterns utilizing the *Wholesale Data* datset.
-The ultimate goal of the project is to gain insights from the data utilizing PCA, kmeans and hiarchial clustering and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on historical custoemr purchase data.
+The objective of the project is to utilize unsupervised learning techniques to gain insight on customer purchasing patterns utilizing the *Wholesale Data* datset.
+The ultimate goal of the project is to gain insights from the data utilizing PCA, kmeans and hierarchical clustering and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on historical customer purchase data.
 
 ##Process
 
@@ -22,15 +22,13 @@ under normal circumstances, I would attempt to prove this by quantifying the val
 The step involved addressing outliers, normalizing the data.
 
 ### Step 3 Training model implementation
-I utilized Kmeans to segment customers into distinct groups based on purchasing patterns. After utilizing the Elbow Method to determine the optimal number of clusters, I applied KMeans clustering and assigned cluster labels to each data point. The Clusters indicated 4 distinct cutomer purchasing patterns which could represent different customers based on volume. 
+I utilized Kmeans to segment customers into distinct groups based on purchasing patterns. After utilizing the Elbow Method to determine the optimal number of clusters, I applied KMeans clustering and assigned cluster labels to each data point. The Clusters indicated 4 distinct customer purchasing patterns which could represent different customers based on volume. 
 
-Hierarchial clustering was used to create segmentation of customers, highlighting the hierarchical purchasing pattern in customer.
-transforming it into a lower-dimensional space while preserving the essential variance in the data. 
+Hierarchical clustering was used to create segmentation of customers, highlighting the hierarchical purchasing pattern in customer.
+PCA was used to transform data into a lower-dimensional space while preserving the essential variance in the data. 
 
 ### Results
 - Kmeans seems to be the most effective at clustering
-- Variables above 10k became significantly less clustered, and in order to fine tune the model, could be considered outliers. 
-- based on the pairplot data, we can see some positive correlation between: Grocery and detergent paper, milk and detergent paper
-- in regards to kmeans, anything beyond 4k provided no significant clustering, which was consistent across the dataset. 
-
-
+- Variables above 10k became significantly less clustered, and to fine tune the model, could be considered outliers. 
+- based on the pair plot data, we can see some positive correlation between: Grocery and detergent paper, milk and detergent paper
+- in regard to kmeans, anything beyond 4k provided no significant clustering, which was consistent across the dataset. 
